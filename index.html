@@ -13,216 +13,503 @@
 </head>
 <body class="montserrat m-0 p-0">
     <header>
-        <nav class="top-0 w-full p-5 scroll-m-1:fixed">
-            <div class="flex items-center gap-10 text-black justify-between px-4">
-                <div class="flex gap-3 bg-yellow p-3 rounded-full justify-center">
-                    <img src="src/assets/images/profile.png" alt="profile" class="h-10 w-10 rounded-full">
-                    <h1 class="text-2xl">OneSchool</h1>
+        <nav class="top-0 w-full p-3 sm:p-5 sticky z-50 bg-white">
+            <div class="flex items-center gap-4 sm:gap-10 text-black justify-between px-3 sm:px-4 flex-wrap sm:flex-nowrap">
+                <div class="flex gap-2 sm:gap-3 bg-yellow p-2 sm:p-3 rounded-full justify-center">
+                    <img src="src/assets/images/profile.png" alt="profile" class="h-8 sm:h-10 w-8 sm:w-10 rounded-full">
+                    <h1 class="text-lg sm:text-2xl">OneSchool</h1>
                 </div>
 
-                <div class="flex items-center gap-8 decoration-none bg-yellow px-20 p-5 rounded-full">
+                <div class="hidden md:flex items-center gap-4 lg:gap-8 decoration-none bg-yellow px-6 lg:px-20 p-3 sm:p-5 rounded-full text-sm lg:text-base">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#club">Club</a>
-                    <a href="#event">Event</a>
+                    <a href="#pricing">Pricing</a>
                 </div>
 
-                <div class="bg-yellow p-5 rounded-full">
-                    <a href="#sign-in">Sign In</a>
+                <div class="bg-yellow p-2 sm:p-3 lg:p-5 rounded-full text-sm lg:text-base">
+                    <a href="login.html">Sign In</a>
                 </div>
             </div>
         </nav>
     </header>
 
     <main class="mx-auto">
-       <section class="px-15 relative grid grid-cols-3 gap-20 items-center min-h-screen py-16">
-            <div class="flex flex-col gap-y-20">
-                <img src="https://plus.unsplash.com/premium_photo-1664537975122-9c598d85816e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="run" class="w-90 object-cover rounded-2xl">
-                <img src="https://images.unsplash.com/photo-1565992441121-4367c2967103?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="volly" class="ml-15 w-120 h-90 object-cover rounded-2xl">
+       <!-- Hero Section -->
+       <section class="px-3 sm:px-6 lg:px-15 relative grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10 lg:gap-20 items-center min-h-screen py-8 sm:py-16">
+            <div class="flex flex-col gap-y-4 sm:gap-y-8 lg:gap-y-20 order-2 md:order-1">
+                <img src="https://plus.unsplash.com/premium_photo-1664537975122-9c598d85816e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="run" class="w-full sm:w-80 lg:w-90 object-cover rounded-xl sm:rounded-2xl">
+                <img src="https://images.unsplash.com/photo-1565992441121-4367c2967103?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="volly" class="w-full sm:w-100 lg:w-120 lg:h-90 object-cover rounded-xl sm:rounded-2xl lg:ml-15">
             </div>
 
-            <div class="text-center mx-auto">
-                <img src="src/assets/images/mascot-amazed.png" alt="mascot" class="mx-auto w-60 mb-10">
-                <h1 class="text-5xl gasoek-one-regular text-pink">Your School Club</h1>
-                <h2 class="text-8xl gasoek-one-regular text-green mb-9">In One Go</h2>
+            <div class="text-center mx-auto order-1 md:order-2">
+                <img src="src/assets/images/mascot-amazed.png" alt="mascot" class="mx-auto w-32 sm:w-48 lg:w-60 mb-4 sm:mb-10">
+                <h1 class="text-2xl sm:text-4xl lg:text-5xl gasoek-one-regular text-pink">Your School Club</h1>
+                <h2 class="text-4xl sm:text-6xl lg:text-8xl gasoek-one-regular text-green mb-4 sm:mb-9">In One Go</h2>
 
-                <p class="text-gray-600 mb-10">Discover extracurricular activities, register instantly, join exciting events, and connect with your school community through one modern and fun platform.</p>
+                <p class="text-sm sm:text-base lg:text-base text-gray-600 mb-4 sm:mb-10 px-2">Discover extracurricular activities, register instantly, join exciting events, and connect with your school community through one modern and fun platform.</p>
 
-                <button class="bg-yellow text-black px-8 py-4 rounded-full hover:bg-white hover:border transition duration-300">
+                <button class="bg-yellow text-black px-4 sm:px-8 py-2 sm:py-4 rounded-full hover:bg-white hover:border transition duration-300 text-sm sm:text-base">
                     Explore Clubs
                 </button>
             </div>
 
-            <div class="space-y-9 flex flex-col items-end">
-                <img src="https://plus.unsplash.com/premium_photo-1684820878202-52781d8e0ea9?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="bicle" class="block w-10/12 rounded-2xl">
-                <p class="w-100 text-justify">Build friendships, develop talents, and unlock new opportunities by joining clubs that match your passion.</p>
+            <div class="space-y-3 sm:space-y-9 flex flex-col items-center md:items-end order-3 md:order-3">
+                <img src="https://plus.unsplash.com/premium_photo-1684820878202-52781d8e0ea9?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="bicle" class="w-full sm:w-80 lg:w-10/12 rounded-xl sm:rounded-2xl">
+                <p class="text-xs sm:text-sm lg:text-base text-justify w-full sm:w-80 lg:w-100">Build friendships, develop talents, and unlock new opportunities by joining clubs that match your passion.</p>
 
-                <img src="https://images.unsplash.com/photo-1542319281-2a3772c20dfc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="volly" class="mr-40 w-100 h-70 object-cover rounded-2xl">
-            </div>
+                <img src="https://images.unsplash.com/photo-1542319281-2a3772c20dfc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="volly" class="w-full sm:w-80 lg:w-100 lg:h-70 object-cover rounded-xl sm:rounded-2xl lg:mr-40">
             </div>
         </section>
 
-        <section class="px-15 flex items-center align-center min-h-screen">
+        <!-- About Section -->
+        <section id="about" class="px-3 sm:px-6 lg:px-15 flex items-center justify-center min-h-screen py-8 sm:py-16">
             <div class="space-y-6">
-                <h1 class="text-6xl lg:text-8xl leading-tight gasoek-one-regular mb-16 text-green">
+                <h1 class="text-4xl sm:text-6xl lg:text-8xl leading-tight gasoek-one-regular mb-8 sm:mb-16 text-green">
                     One platform for
                     <span class="text-black">every student</span>
                     to grow, connect,
                     and <span class="text-black">achieve more.</span>
                 </h1>
 
-                <div class="flex gap-10 justify-end">
-                    <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?q=80&w=881&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="run" class="w-150 h-90 object-cover rounded-2xl self-end">
-                    <img src="https://images.unsplash.com/photo-1560089000-7433a4ebbd64?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="swwim" class="w-200 h-130 object-cover rounded-2xl">
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-10 justify-center lg:justify-end">
+                    <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?q=80&w=881&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="run" class="w-full sm:w-80 lg:w-150 lg:h-90 object-cover rounded-xl sm:rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1560089000-7433a4ebbd64?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="swwim" class="w-full sm:w-100 lg:w-200 lg:h-130 object-cover rounded-xl sm:rounded-2xl">
                 </div>
             </div>
         </section>
 
+        <!-- Built For Students Section -->
         <section class="bg-creame">
-            <div class="px-15 py-50 grid gap-20">
+            <div class="px-3 sm:px-6 lg:px-15 py-12 sm:py-30 lg:py-50 grid gap-10 sm:gap-20">
                 <div>
-                    <div class="flex gap-9">
-                        <p class="text-gray-600 text-lg leading-relaxed max-w-lg self-end">
+                    <div class="flex flex-col lg:flex-row gap-4 sm:gap-9">
+                        <div class="gasoek-one-regular text-5xl sm:text-7xl lg:text-9xl">
+                            <h1>BUILT</h1>
+                            <h1 class="text-yellow lg:ml-40">FOR</h1>
+                            <h1 lg:ml-80>STUDENTS</h1>
+                        </div>
+                        <img src="src/assets/images/mascot-fellincool.png" alt="mascot" class="w-32 sm:w-40 h-auto lg:h-full self-end"> 
+                        <p class="text-xs sm:text-base lg:text-lg text-gray-600 leading-relaxed max-w-lg self-end">
                             Helping students discover extracurricular activities,
                             manage events, and grow their talents through one
                             fun and modern school platform.
-                        </p>  
-                        <div class="gasoek-one-regular text-9xl">
-                            <h1>BUILT</h1>
-                            <h1 class="text-yellow ml-40">FOR</h1>
-                            <h1 class="ml-80">STUDENTS</h1>
-                        </div>
-                        <img src="src/assets/images/mascot-fellincool.png" alt="mascot" class="h-full w-40 self-end">  
+                        </p>   
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-6">
-                    <div class="bg-yellow w-full rounded-2xl p-10">
-                        <h1 class="gasoek-one-regular text-dark-yellow text-7xl">20+</h1>
-                        <p>Ekstrakurikuler</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 text-center">
+                    <div class="bg-yellow w-full rounded-xl sm:rounded-2xl p-6 sm:p-10">
+                        <h1 class="gasoek-one-regular text-dark-yellow text-5xl sm:text-7xl">20+</h1>
+                        <p class="text-sm sm:text-base">Ekstrakurikuler</p>
                     </div>
-                    <div class="border-4 border-dark-yellow w-full rounded-2xl p-10">
-                        <h1 class="gasoek-one-regular text-dark-yellow text-7xl">500+</h1>
-                        <p>Active Member</p>
+                    <div class="border-4 border-dark-yellow w-full rounded-xl sm:rounded-2xl p-6 sm:p-10">
+                        <h1 class="gasoek-one-regular text-dark-yellow text-5xl sm:text-7xl">500+</h1>
+                        <p class="text-sm sm:text-base">Active Member</p>
                     </div>
-                    <div class="border-4 border-dark-yellow w-full rounded-2xl p-10">
-                        <h1 class="gasoek-one-regular text-dark-yellow text-7xl">10+</h1>
-                        <p>Partner With Schools</p>
+                    <div class="border-4 border-dark-yellow w-full rounded-xl sm:rounded-2xl p-6 sm:p-10">
+                        <h1 class="gasoek-one-regular text-dark-yellow text-5xl sm:text-7xl">10+</h1>
+                        <p class="text-sm sm:text-base">Partner With Schools</p>
                     </div>
-                    <div class="bg-yellow w-full rounded-2xl p-10">
-                        <h1 class="gasoek-one-regular text-dark-yellow text-7xl">50+</h1>
-                        <p>Prestasi</p>
+                    <div class="bg-yellow w-full rounded-xl sm:rounded-2xl p-6 sm:p-10">
+                        <h1 class="gasoek-one-regular text-dark-yellow text-5xl sm:text-7xl">50+</h1>
+                        <p class="text-sm sm:text-base">Prestasi</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="grid place-items-center px-15 py-60 min-h-screen">
-            <h1 class="text-7xl gasoek-one-regular text-pink mb-20">What We Offer</h1>
-            <div class="flex gap-40">
-                <div class="flex gap-9">
-                    <div class="space-y-9">
-                        <img src="https://images.unsplash.com/photo-1569074187119-c87815b476da?q=80&w=1325&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="golf" class="h-80 w-70 object-cover rounded-2xl">
-                        <img src="https://images.unsplash.com/photo-1593013820725-ca0b6076576f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="american" class="ml-20 h-60 w-100 object-cover rounded-2xl">
+        <!-- What We Offer Section -->
+        <section class="grid place-items-center px-3 sm:px-6 lg:px-15 py-12 sm:py-30 lg:py-60 min-h-screen">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl gasoek-one-regular text-pink mb-8 sm:mb-20">What We Offer</h1>
+            <div class="flex flex-col lg:flex-row gap-8 sm:gap-20 lg:gap-40 w-full">
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-9">
+                    <div class="space-y-4 sm:space-y-9 flex flex-col">
+                        <img src="https://images.unsplash.com/photo-1569074187119-c87815b476da?q=80&w=1325&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="golf" class="h-60 sm:h-80 w-full sm:w-70 object-cover rounded-xl sm:rounded-2xl">
+                        <img src="https://images.unsplash.com/photo-1593013820725-ca0b6076576f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="american" class="h-60 w-full sm:w-100 object-cover rounded-xl sm:rounded-2xl lg:ml-20">
                     </div>
 
-                    <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="run" class="h-180 w-90 object-cover rounded-2xl">
+                    <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="run" class="hidden sm:block h-180 w-full sm:w-90 object-cover rounded-xl sm:rounded-2xl">
                 </div>
-                <div class="grid gap-3">
-                    <div class="bg-green text-white p-4 w-130 rounded-2xl grid place-items-center">
-                        <p class=" text-2xl font-semibold">
+                <div class="grid gap-3 w-full lg:w-auto">
+                    <div class="bg-green text-white p-4 w-full lg:w-130 rounded-xl sm:rounded-2xl grid place-items-center text-center">
+                        <p class=" text-lg sm:text-2xl font-semibold">
                             Online Registration
                         </p>
-                        <p>Join clubs instantly without paperwork.</p>
+                        <p class="text-sm sm:text-base">Join clubs instantly without paperwork.</p>
                     </div>
-                    <div class="bg-pink text-white p-4 w-130 rounded-2xl grid place-items-center">
-                        <p class=" text-2xl font-semibold">
+                    <div class="bg-pink text-white p-4 w-full lg:w-130 rounded-xl sm:rounded-2xl grid place-items-center text-center">
+                        <p class=" text-lg sm:text-2xl font-semibold">
                             Event Schedule
                         </p>
-                        <p>Stay updated with upcoming activities.</p>
+                        <p class="text-sm sm:text-base">Stay updated with upcoming activities.</p>
                     </div>
-                    <div class="bg-green text-white p-4 w-130 rounded-2xl grid place-items-center">
-                        <p class=" text-2xl font-semibold">
+                    <div class="bg-green text-white p-4 w-full lg:w-130 rounded-xl sm:rounded-2xl grid place-items-center text-center">
+                        <p class=" text-lg sm:text-2xl font-semibold">
                             Digital Attendance
                         </p>
-                        <p>Attendance tracking made simple.</p>
+                        <p class="text-sm sm:text-base">Attendance tracking made simple.</p>
                     </div>
-                    <div class="bg-pink text-white p-4 w-130 rounded-2xl grid place-items-center">
-                        <p class=" text-2xl font-semibold">
+                    <div class="bg-pink text-white p-4 w-full lg:w-130 rounded-xl sm:rounded-2xl grid place-items-center text-center">
+                        <p class=" text-lg sm:text-2xl font-semibold">
                             Club Funds
                         </p>
-                        <p>Manage club finances transparently.</p>
+                        <p class="text-sm sm:text-base">Manage club finances transparently.</p>
                     </div>
-                    <div class="bg-green text-white p-4 w-130 rounded-2xl grid place-items-center">
-                        <p class=" text-2xl font-semibold">
+                    <div class="bg-green text-white p-4 w-full lg:w-130 rounded-xl sm:rounded-2xl grid place-items-center text-center">
+                        <p class=" text-lg sm:text-2xl font-semibold">
                             Announcements
                         </p>
-                        <p>Never miss important school updates.</p>
+                        <p class="text-sm sm:text-base">Never miss important school updates.</p>
                     </div>
-                    <div class="bg-pink text-white p-4 w-130 rounded-2xl grid place-items-center">
-                        <p class=" text-2xl font-semibold">
+                    <div class="bg-pink text-white p-4 w-full lg:w-130 rounded-xl sm:rounded-2xl grid place-items-center text-center">
+                        <p class=" text-lg sm:text-2xl font-semibold">
                             Achievements
                         </p>
-                        <p>Showcase student accomplishments proudly.</p>
+                        <p class="text-sm sm:text-base">Showcase student accomplishments proudly.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="grid place-items-center px-15 min-h-screen">
-            <h1 class="text-7xl gasoek-one-regular text-black">Most <a class="text-green">Favorite</a> Clubs!</h1>
-            <p>All time favorite!</p>
-            <div class="flex gap-5">
-                <div>
-                   <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?q=80&w=881&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-150 w-90 object-cover rounded-2xl">
-                   <h1 class="text-5xl">Soccer</h1>
-                   <p class="text-black/80">102+ Clubs</p>     
+        <!-- Favorite Clubs Section -->
+        <section id="club" class="grid place-items-center px-3 sm:px-6 lg:px-15 min-h-screen py-8 sm:py-16">
+            <h1 class="text-3xl sm:text-5xl lg:text-7xl gasoek-one-regular text-black text-center mb-2">Most <span class="text-green">Favorite</span> Clubs!</h1>
+            <p class="text-sm sm:text-base mb-8 sm:mb-12">All time favorite!</p>
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-5 w-full">
+                <div class="flex-1">
+                   <img src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?q=80&w=881&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-40 sm:h-150 w-full object-cover rounded-xl sm:rounded-2xl">
+                   <h1 class="text-2xl sm:text-5xl font-bold mt-2 sm:mt-4">Soccer</h1>
+                   <p class="text-black/80 text-sm sm:text-base">102+ Clubs</p>     
                 </div>
-                <div>
-                   <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-150 w-200 object-cover rounded-2xl">
-                   <h1 class="text-5xl">Swimming</h1>
-                   <p class="text-black/80">302+ Clubs</p>     
+                <div class="flex-1">
+                   <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-40 sm:h-150 w-full object-cover rounded-xl sm:rounded-2xl">
+                   <h1 class="text-2xl sm:text-5xl font-bold mt-2 sm:mt-4">Swimming</h1>
+                   <p class="text-black/80 text-sm sm:text-base">302+ Clubs</p>     
                 </div>
-                <div>
-                   <img src="https://plus.unsplash.com/premium_photo-1676634832558-6654a134e920?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-150 w-90 object-cover rounded-2xl">
-                   <h1 class="text-5xl">basketball</h1>
-                   <p class="text-black/80">98+ Clubs</p>     
+                <div class="flex-1">
+                   <img src="https://plus.unsplash.com/premium_photo-1676634832558-6654a134e920?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="h-40 sm:h-150 w-full object-cover rounded-xl sm:rounded-2xl">
+                   <h1 class="text-2xl sm:text-5xl font-bold mt-2 sm:mt-4">Basketball</h1>
+                   <p class="text-black/80 text-sm sm:text-base">98+ Clubs</p>     
                 </div>
             </div>
         </section>
 
-        <section class="px-15 min-h-screen flex flex-col justify-center">
-            <h1 class="text-7xl gasoek-one-regular text-black mb-10">
-                What they <a class="text-green">SAY</a> about us
+        <!-- Testimonial Section -->
+        <section class="px-3 sm:px-6 lg:px-15 min-h-screen flex flex-col justify-center py-8 sm:py-16">
+            <h1 class="text-3xl sm:text-5xl lg:text-7xl gasoek-one-regular text-black mb-8 sm:mb-10">
+                What they <span class="text-green">SAY</span> about us
             </h1>
 
             <div>
-                <h1 class="text-6xl mb-5">
-                    “Thank you, this website is really cool. I’ve become more productive and no longer have to deal with scattered DOCX/DOC files everywhere.”
+                <h1 class="text-xl sm:text-3xl lg:text-6xl mb-5 leading-tight">
+                    "Thank you, this website is really cool. I've become more productive and no longer have to deal with scattered DOCX/DOC files everywhere."
                 </h1>
 
-                <p class="text-2xl">
+                <p class="text-lg sm:text-2xl">
                     -Nero Santosa
                 </p>
             </div>
         </section>
 
-        <section class="px-15 grid grid-cols-2 gap-18 items-center min-h-screen">
-            <div class="grid lg:grid-cols-2 gap-20 items-center justify-end">
-                <img src="src/assets/images/mascot-confused.png" alt="mascot" class="h-full w-90 ">
+        <!-- Pricing Section -->
+        <section id="pricing" class="px-3 sm:px-6 lg:px-15 py-8 sm:py-16 lg:py-24 bg-creame">
+            <div class="text-center mb-8 sm:mb-16">
+                <p class="text-dark-yellow font-semibold mb-2 sm:mb-3 text-xs sm:text-base">
+                    PRICING
+                </p>
+
+                <h2 class="gasoek-one-regular text-3xl sm:text-4xl lg:text-6xl text-brown mb-4">
+                    AFFORDABLE FOR
+                    <br>
+                    EVERY STUDENT
+                </h2>
+
+                <p class="text-xs sm:text-base text-gray-600 max-w-2xl mx-auto px-2">
+                    Choose the plan that fits your extracurricular community.
+                    Start small and grow together.
+                </p>
             </div>
-            <div class="space-y-6">
-                <h1 class="text-7xl leading-tight gasoek-one-regular text-pink">
-                    i really don’t know where to start :(
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                
+                <!-- Basic -->
+                <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg border border-gray-200">
+                    <h3 class="text-lg sm:text-2xl font-bold mb-2">
+                        Starter
+                    </h3>
+
+                    <p class="text-gray-500 mb-6 text-sm sm:text-base">
+                        Perfect for small clubs.
+                    </p>
+
+                    <h2 class="text-3xl sm:text-5xl font-bold text-dark-yellow mb-6">
+                        Rp15K
+                        <span class="text-sm sm:text-lg text-gray-500">/month</span>
+                    </h2>
+
+                    <ul class="space-y-2 sm:space-y-3 mb-8 text-sm sm:text-base">
+                        <li>✓ Attendance Tracking</li>
+                        <li>✓ Announcements</li>
+                        <li>✓ Member Management</li>
+                        <li>✓ Up to 50 Members</li>
+                    </ul>
+
+                    <button class="w-full bg-yellow p-3 sm:p-4 rounded-xl font-semibold text-sm sm:text-base hover:bg-yellow/80 transition">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Popular -->
+                <div class="bg-dark-yellow text-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-xl md:col-span-2 lg:col-span-1 lg:scale-105">
+                    <div class="inline-block bg-yellow text-black px-3 sm:px-4 py-1 rounded-full text-xs sm:text-sm font-bold mb-4">
+                        MOST POPULAR
+                    </div>
+
+                    <h3 class="text-lg sm:text-2xl font-bold mb-2">
+                        Student
+                    </h3>
+
+                    <p class="text-yellow-100 mb-6 text-sm sm:text-base">
+                        Best value for school organizations.
+                    </p>
+
+                    <h2 class="text-3xl sm:text-5xl font-bold mb-6">
+                        Rp29K
+                        <span class="text-sm sm:text-lg text-yellow-100">/month</span>
+                    </h2>
+
+                    <ul class="space-y-2 sm:space-y-3 mb-8 text-sm sm:text-base">
+                        <li>✓ Unlimited Members</li>
+                        <li>✓ Attendance Tracking</li>
+                        <li>✓ Financial Reports</li>
+                        <li>✓ Activity Scheduling</li>
+                        <li>✓ Club Chat</li>
+                        <li>✓ Event Management</li>
+                    </ul>
+
+                    <button class="w-full bg-white text-dark-yellow p-3 sm:p-4 rounded-xl font-semibold text-sm sm:text-base hover:bg-gray-100 transition">
+                        Choose Plan
+                    </button>
+                </div>
+
+                <!-- Premium -->
+                <div class="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-lg border border-gray-200 md:col-span-2 lg:col-span-1">
+                    <h3 class="text-lg sm:text-2xl font-bold mb-2">
+                        School
+                    </h3>
+
+                    <p class="text-gray-500 mb-6 text-sm sm:text-base">
+                        For multiple extracurriculars.
+                    </p>
+
+                    <h2 class="text-3xl sm:text-5xl font-bold text-dark-yellow mb-6">
+                        Rp99K
+                        <span class="text-sm sm:text-lg text-gray-500">/month</span>
+                    </h2>
+
+                    <ul class="space-y-2 sm:space-y-3 mb-8 text-sm sm:text-base">
+                        <li>✓ Multiple Clubs</li>
+                        <li>✓ Analytics Dashboard</li>
+                        <li>✓ Finance Tracking</li>
+                        <li>✓ School-wide Events</li>
+                        <li>✓ Priority Support</li>
+                    </ul>
+
+                    <button class="w-full bg-yellow p-3 sm:p-4 rounded-xl font-semibold text-sm sm:text-base hover:bg-yellow/80 transition">
+                        Contact Us
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ/Help Section -->
+        <section class="px-3 sm:px-6 lg:px-15 grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-18 items-center min-h-screen py-8 sm:py-16">
+            <div class="grid place-items-center order-2 lg:order-1">
+                <img src="src/assets/images/mascot-confused.png" alt="mascot" class="w-48 sm:w-64 lg:w-90 h-auto"> 
+            </div>
+            <div class="space-y-4 sm:space-y-6 order-1 lg:order-2">
+                <h1 class="text-3xl sm:text-5xl lg:text-7xl leading-tight gasoek-one-regular text-pink">
+                    i really don't know where to start :(
                 </h1>
 
-                <p class="text-justify text-xl text-gray-600">Starting a new project can feel overwhelming, especially when you have so many ideas but don’t know which one to build first. Don’t worry—every great project begins with a single small step. Take your time, explore your creativity, and enjoy the process of turning your ideas into something amazing.</p>
+                <p class="text-justify text-base sm:text-lg lg:text-xl text-gray-600">Starting a new project can feel overwhelming, especially when you have so many ideas but don't know which one to build first. Don't worry—every great project begins with a single small step. Take your time, explore your creativity, and enjoy the process of turning your ideas into something amazing.</p>
                 
             </div>
         </section>
     </main>
-    <footer>
-        <a href="#">ini footeer</a>
-    </footer>
     
+    <!-- Footer -->
+<footer class="bg-dark-yellow text-white mt-24 rounded-t-[60px] overflow-hidden">
+    <div class="px-6 lg:px-15 py-16">
+
+        <!-- Top Footer -->
+        <div class="grid lg:grid-cols-5 gap-12">
+
+            <!-- Brand -->
+            <div class="lg:col-span-2">
+                <h2 class="gasoek-one-regular text-5xl mb-4">
+                    School One
+                </h2>
+
+                <p class="text-lg opacity-90 leading-relaxed mb-6">
+                    Discover activities, connect with communities,
+                    and unlock your full potential through
+                    extracurricular experiences.
+                </p>
+
+                <div class="flex gap-4">
+                    <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-xl transition">
+                        🌐
+                    </a>
+
+                    <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-xl transition">
+                        📸
+                    </a>
+
+                    <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-xl transition">
+                        💬
+                    </a>
+
+                    <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-xl transition">
+                        ▶️
+                    </a>
+                </div>
+            </div>
+
+            <!-- Explore -->
+            <div>
+                <h3 class="font-bold text-xl mb-5">
+                    Explore
+                </h3>
+
+                <div class="flex flex-col gap-3">
+                    <a href="#" class="hover:text-yellow transition">
+                        Home
+                    </a>
+
+                    <a href="#" class="hover:text-yellow transition">
+                        About
+                    </a>
+
+                    <a href="#" class="hover:text-yellow transition">
+                        Extracurricular
+                    </a>
+
+                    <a href="#" class="hover:text-yellow transition">
+                        Events
+                    </a>
+
+                    <a href="#" class="hover:text-yellow transition">
+                        Achievements
+                    </a>
+                </div>
+            </div>
+
+            <!-- Resources -->
+            <div>
+                <h3 class="font-bold text-xl mb-5">
+                    Resources
+                </h3>
+
+                <div class="flex flex-col gap-3">
+                    <a href="#" class="hover:text-yellow transition">
+                        Student Guide
+                    </a>
+
+                    <a href="#" class="hover:text-yellow transition">
+                        FAQ
+                    </a>
+
+                    <a href="#" class="hover:text-yellow transition">
+                        Membership
+                    </a>
+
+                    <a href="#" class="hover:text-yellow transition">
+                        Support
+                    </a>
+
+                    <a href="#" class="hover:text-yellow transition">
+                        Privacy Policy
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="font-bold text-xl mb-5">
+                    Contact
+                </h3>
+
+                <div class="space-y-3">
+                    <p>
+                        📍 School One Campus
+                    </p>
+
+                    <p>
+                        📧 hello@schoolone.id
+                    </p>
+
+                    <p>
+                        📞 +62 812-3456-7890
+                    </p>
+
+                    <p>
+                        🕒 Mon - Fri, 07:00 - 16:00
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CTA Section -->
+        <div class="mt-16 bg-white/10 rounded-3xl p-8 flex flex-col lg:flex-row justify-between items-center gap-6">
+            <div>
+                <h3 class="text-2xl font-bold mb-2">
+                    Ready to Join an Extracurricular?
+                </h3>
+
+                <p class="opacity-80">
+                    Start exploring clubs and activities that match your passion.
+                </p>
+            </div>
+
+            <a
+                href="#"
+                class="bg-yellow text-black px-8 py-4 rounded-2xl font-bold hover:scale-105 transition"
+            >
+                Get Started
+            </a>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-white/20 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+
+            <p class="opacity-70">
+                © 2026 School One. All rights reserved.
+            </p>
+
+            <div class="flex gap-6 opacity-70">
+                <a href="#" class="hover:text-yellow transition">
+                    Terms
+                </a>
+
+                <a href="#" class="hover:text-yellow transition">
+                    Privacy
+                </a>
+
+                <a href="#" class="hover:text-yellow transition">
+                    Cookies
+                </a>
+            </div>
+
+            <p class="opacity-70">
+                Built with ❤️ for students
+            </p>
+
+        </div>
+
+    </div>
+</footer>
 </body>
 </html>
